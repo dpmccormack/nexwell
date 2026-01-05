@@ -10,7 +10,7 @@ const specialties = [
   { icon: Apple, name: 'Gastroenterology' },
   { icon: Baby, name: 'OB/GYN' },
   { icon: Stethoscope, name: 'Primary Care' },
-  { icon: Activity, name: 'Urology' },
+  { icon: Activity, name: 'Rheumatology' },
   { icon: Sparkles, name: 'Dermatology' },
 ]
 
