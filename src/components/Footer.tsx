@@ -28,9 +28,10 @@ export default function Footer() {
               <Image
                 src="/nexwell-logo.png"
                 alt="NexWell Health Partners"
-                width={180}
-                height={48}
-                className="h-12 w-auto brightness-0 invert"
+                width={540}
+                height={144}
+                className="brightness-0 invert"
+                style={{ height: '9rem', width: 'auto' }}
               />
             </div>
             <p className="text-white/70 mb-6">

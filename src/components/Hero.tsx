@@ -5,7 +5,7 @@ import { ArrowRight, Shield, Activity, Laptop } from 'lucide-react'
 
 export default function Hero() {
   return (
-    <section className="pt-24 pb-16 lg:pt-32 lg:pb-24 bg-gradient-to-br from-white via-light-gray to-white overflow-hidden">
+    <section className="pt-40 pb-16 lg:pt-44 lg:pb-24 bg-gradient-to-br from-white via-light-gray to-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-5 gap-12 items-center">
           <motion.div
