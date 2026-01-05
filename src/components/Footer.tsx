@@ -1,6 +1,7 @@
 'use client'
 
 import { Linkedin, Twitter, Facebook } from 'lucide-react'
+import Image from 'next/image'
 
 const serviceLinks = [
   { name: 'Revenue Cycle Management', href: '#services' },
@@ -23,21 +24,14 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center">
-                <svg viewBox="0 0 24 24" className="w-6 h-6 text-white" fill="currentColor">
-                  <circle cx="6" cy="6" r="2" />
-                  <circle cx="18" cy="6" r="2" />
-                  <circle cx="12" cy="12" r="2" />
-                  <circle cx="6" cy="18" r="2" />
-                  <circle cx="18" cy="18" r="2" />
-                  <line x1="6" y1="6" x2="12" y2="12" stroke="currentColor" strokeWidth="1.5" />
-                  <line x1="18" y1="6" x2="12" y2="12" stroke="currentColor" strokeWidth="1.5" />
-                  <line x1="6" y1="18" x2="12" y2="12" stroke="currentColor" strokeWidth="1.5" />
-                  <line x1="18" y1="18" x2="12" y2="12" stroke="currentColor" strokeWidth="1.5" />
-                </svg>
-              </div>
-              <span className="text-xl font-bold">NexWell</span>
+            <div className="mb-4">
+              <Image
+                src="/nexwell-logo.png"
+                alt="NexWell Health Partners"
+                width={180}
+                height={48}
+                className="h-12 w-auto brightness-0 invert"
+              />
             </div>
             <p className="text-white/70 mb-6">
               Empowering specialty practices with operational excellence and strategic partnerships.

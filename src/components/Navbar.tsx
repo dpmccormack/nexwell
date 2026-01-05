@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
+import Image from 'next/image'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -18,22 +19,16 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary-teal to-deep-teal rounded-lg flex items-center justify-center">
-              <svg viewBox="0 0 24 24" className="w-6 h-6 text-white" fill="currentColor">
-                <circle cx="6" cy="6" r="2" />
-                <circle cx="18" cy="6" r="2" />
-                <circle cx="12" cy="12" r="2" />
-                <circle cx="6" cy="18" r="2" />
-                <circle cx="18" cy="18" r="2" />
-                <line x1="6" y1="6" x2="12" y2="12" stroke="currentColor" strokeWidth="1.5" />
-                <line x1="18" y1="6" x2="12" y2="12" stroke="currentColor" strokeWidth="1.5" />
-                <line x1="6" y1="18" x2="12" y2="12" stroke="currentColor" strokeWidth="1.5" />
-                <line x1="18" y1="18" x2="12" y2="12" stroke="currentColor" strokeWidth="1.5" />
-              </svg>
-            </div>
-            <span className="text-xl font-bold text-deep-teal">NexWell</span>
-          </div>
+          <a href="#" className="flex items-center">
+            <Image
+              src="/nexwell-logo.png"
+              alt="NexWell Health Partners"
+              width={180}
+              height={48}
+              className="h-10 w-auto"
+              priority
+            />
+          </a>
 
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
