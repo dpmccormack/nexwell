@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { Bone, Heart, Brain, Apple, Baby, Stethoscope, Activity, Sparkles } from 'lucide-react'
 
 const specialties = [
-  { icon: Bone, name: 'Orthopedics' },
+  { icon: Bone, name: 'Oncology' },
   { icon: Heart, name: 'Cardiology' },
   { icon: Brain, name: 'Behavioral Health' },
   { icon: Apple, name: 'Gastroenterology' },
