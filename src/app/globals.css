@@ -1,13 +1,21 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary-teal: #1F7A8C;
+  --color-deep-teal: #134B54;
+  --color-accent-gold: #C9A227;
+  --color-light-gold: #E8D5A3;
+  --color-light-gray: #F5F7F9;
+  --color-dark-text: #2D3748;
+  --font-family-sans: 'Inter', system-ui, sans-serif;
+  --font-family-heading: 'Inter', system-ui, sans-serif;
+}
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: var(--font-family-sans);
 }
